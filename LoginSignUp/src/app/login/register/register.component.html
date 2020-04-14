@@ -1,0 +1,44 @@
+<div class="info-color white-text text-center py-4" style=" background-image: linear-gradient(to right, #e77272, #d11c3a);"></div>
+<div class="container">
+  <div class="imageFOF row">
+    <div class="col-4"></div>
+    <div class="col-4"><img src="/assets/images/spark-it.png" style="width: 93%;"></div>
+    <div class="col-4"></div>
+  </div>
+
+    <!-- Form -->
+    <form [formGroup]="userform" >
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4 text-center md-form" style="width: 40%;" > <!-- UserNamel -->
+          <label>Username</label>
+          <input type="text" id="username" class="form-control"  formControlName="username" required>
+        </div>
+
+
+
+        <div class="col-4"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4 text-center md-form"  style="width: 40%;"> <!-- Password -->
+          <label>Password</label>
+          <input type="password" id="password" class="form-control"  formControlName="password"  required>
+        </div>
+        <div class="col-4"></div>
+      </div>
+
+      <!-- Sign in button -->
+
+      <div class="row">
+        <div class="col-md-5"></div>
+        <div class="col-md-2"><button type="button" (click)="register()"><span style="color: black">Register </span></button></div>
+        <div class="col-md-5"></div>
+      </div>
+      <!-- Register -->
+      <p>You have an account?<a routerLink="/" >Login</a></p>
+    </form>
+    <!-- Form -->
+
+</div>

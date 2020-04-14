@@ -1,0 +1,6 @@
+{
+  "baseUrl": "http://127.0.0.1:8000/api",
+  "title": "api symfony to manipulate user table"
+
+
+}
